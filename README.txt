@@ -1,0 +1,1 @@
+This repository holds all projects completed in the tech academy JavaScript course
