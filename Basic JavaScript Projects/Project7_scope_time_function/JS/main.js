@@ -23,7 +23,7 @@ function checknumber(number){
 //corrected Code
 function checknumber(){
     var inputElement = document.getElementById("userInput");
-    if (number > 0) {
+    if (userInput > 0) {
         document.getElementById("Write your number").innerHTML = "your number is positive!";
     }
 }
