@@ -13,20 +13,22 @@ function fun2(){
 }
 
 //Code with error in it
-function checknumber(number){
-    var inputElement = document.getElementById("userInput");
-    var Answer
-    if (number > 0) {
-        document.getElementById("Write your number").innerHTML = Answer;
-    }
-}
+//function checknumber(number){
+  //  var inputElement = document.getElementById("userInput");
+   // var Answer
+   // if (number > 0) {
+     //   document.getElementById("Write your number").innerHTML = Answer;
+   // }
+//}
 //corrected Code
-function checknumber(){
+function checknumber() {
     var inputElement = document.getElementById("userInput");
-    if (userInput > 0) {
-        document.getElementById("Write your number").innerHTML = "your number is positive!";
+    var number = parseInt(inputElement.value);
+    if (number > 0) {
+        document.getElementById("Write_your_number").innerHTML = "Your number is positive!";
     }
 }
+
 
 function Time_function() {
     var Time = new Date().getHours();
