@@ -1,0 +1,17 @@
+/* CSS to hide all images by default */
+.mySlides {
+    display: none;
+}
+
+/* CSS for slideshow container */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+/* CSS for images */
+img {
+    width: 100%;
+    height: auto;
+}
