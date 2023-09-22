@@ -64,7 +64,7 @@ function Handle_Operator(Next_Operator) {
         result = (result *1).toString();
         Calculator.Display_Value = parseFloat(result);
         Calculator.First_Operand = parseFloat(result);
-    }
+    } 
     Calculator.Wait_Second_Operand = true;
     Calculator.operator = Next_Operator;
 }
