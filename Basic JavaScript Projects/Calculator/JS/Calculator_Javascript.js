@@ -9,7 +9,7 @@ const Calculator = {
     //this will hold the operator, we set it to null for now
     operator: null,
 };
-
+//Above Checked and is correct
 //this modifies values each time a button is clicked on
 function Input_Digit(digit) {
     const {Display_Value, Wait_Second_Operand } = Calculator;
@@ -24,19 +24,19 @@ function Input_Digit(digit) {
         Calculator.Display_Value = Display_Value === '0' ? digit : Display_Value + digit;
     }
 }
-
+//Above checked and is corect
 //This section handles decimal points
 function Input_Decimal(dot) {
     //This ensures that accidental click of the decimal point doesnt
     //cause bugs in the operation
     if (Calculator.Wait_Second_Operand === true) return;
-    if (Calculator.Display_Value.includes(dot)) {
+    if (!Calculator.Display_Value.includes(dot)) {
         //We are saying that if the display value does not contain a decimal point
         //we want to add a decimal point
         Calculator.Display_Value += dot;
     }
 }
-
+//Above checked and is corect
 //This section handles operators
 function Handle_Operator(Next_Operator) {
     const {First_Operand, Display_Value, operator} = Calculator;
@@ -88,7 +88,7 @@ function Update_Display() {
     const display = document.querySelector('.calculator-screen');
     display.value = Calculator.Display_Value;
 }
-
+//Above checked and is corect
 Update_Display();
 //This section monitors button clicks
 const keys = document.querySelector('.calculator-keys');
